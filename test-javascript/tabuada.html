@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuada</title>
+
+  <style>
+    body{
+      background-color: black;
+      width: 100%;
+      min-height: 50vh;
+      color: white;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    header{
+      text-align: center;
+    }
+    section{
+      background-color: #ffffff;
+      color: black;
+      width: 500px;
+      margin: auto;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.373);
+      text-align: center;
+    }
+
+    footer{
+      bottom: 0px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+    }
+    #section{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Tabuada</h1>
+  </header>
+
+  <section>
+    <div id="section">
+      <div style="margin-top: 20px;">
+        <label for="InputTabu">Número:</label>
+        <input type="number" name="InputTabu" id="InputTabu">
+      </div>
+
+      <button onclick="generate()">Gerar Tabuada</button>
+      <p id="resposta">Insira um Número acima</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;Ivanildo Iure</p>
+  </footer>
+  
+  <script src="tabuada.js"></script>
+</body>
+</html>

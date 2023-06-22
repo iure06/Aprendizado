@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador</title>
+
+  <style>
+    body{
+      background-color: black;
+      width: 100%;
+      min-height: 50vh;
+      color: white;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    header{
+      text-align: center;
+    }
+    section{
+      background-color: #ffffff;
+      color: black;
+      width: 500px;
+      margin: auto;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.373);
+      text-align: center;
+    }
+
+    footer{
+      bottom: 0px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Vamos contar</h1>
+  </header>
+
+  <section>
+    <div>
+      <label for="inicio">Inicio:</label>
+      <input type="number" name="inicio" id="inicio">
+
+      <label for="fim">Fim:</label>
+      <input type="number" name="fim" id="fim">
+
+      <label for="passo">Passo:</label>
+      <input type="number" name="passo" id="passo">
+
+      <button onclick="contagem()">Contar</button>
+
+      <p id="resposta">Aguardando dados</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;Ivanildo Iure</p>
+  </footer>
+  
+  <script src="contador.js"></script>
+</body>
+</html>

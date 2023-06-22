@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisador de Números</title>
+
+  <style>
+    body{
+      background-color: black;
+      width: 100%;
+      min-height: 50vh;
+      color: white;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    header{
+      text-align: center;
+    }
+    section{
+      background-color: #ffffff;
+      color: black;
+      width: 600px;
+      margin: auto;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.373);
+      text-align: center;
+    }
+
+    footer{
+      bottom: 0px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+    }
+    #inputBox{
+      width: 98%;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-items: center;
+      
+    }
+    #sec{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      
+    }
+    #sec button{
+      width: 100px;
+    }
+    #selectNumber{
+      width: 220px;
+      height: 150px;
+      min-height: 70px;
+      border: 1px solid black;
+      overflow: auto;
+    }
+    
+
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Analisador de Números</h1>
+  </header>
+
+  <section>
+    <div id="inputBox">
+      <label for="inputNumber">Número (entre 1 e 100):</label>
+      <input type="number" name="inputNumber" id="inputNumber">
+      <button onclick="add()">Adicionar</button>
+    </div>
+
+    <div id="sec">
+      <div id="selectNumber"></div>
+      <button onclick="final()">Finalizar</button>
+    </div>
+
+    <div id="resposta">
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;Ivanildo Iure</p>
+  </footer>
+  
+  <script src="analizador.js"></script>
+</body>
+</html>

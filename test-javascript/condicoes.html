@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detran</title>
+  <style>
+    #result, #resultPais, #resultIdade{
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Sistema de multa</h1>
+  <input type="number"  id="velocimetro" >
+  <button onclick="verificar()">Verificar</button>
+  <div id="result"></div>
+
+  <h1>Nacionalidade</h1>
+  <input type="text" id="pais">
+  <button onclick="verificarPais()">Verificar</button>
+  <div id="resultPais"></div>
+
+  <h1>Idade</h1>
+  <input type="number" id="idade">
+  <button onclick="verificarIdade()">Verificar</button>
+  <div id="resultIdade"></div>
+
+  <script src="./condicoes.js"></script>
+</body>
+</html>
